@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * The jdbc class
+ * Used to connect the SQLserver with the application server
+ * The url for the SQLserver and credentials should be given below
  */
 package Server;
 
@@ -12,16 +12,16 @@ import java.sql.Statement;
 import javax.swing.JOptionPane;
 
 
-public class jdb {
+public class jdbc {
     
 //    Set connection driver and database url
     String driver="com.mysql.jdbc.Driver";
-    String url="jdbc:mysql://localhost:3306/tst";
+    String url="jdbc:mysql://localhost:3306/tst"; // SQLserver URL and database name
  
 //    Set the connection with SQL Server
     Connection getConnection() throws  Exception{
         Class.forName(driver);
-        Connection con= DriverManager.getConnection(url, "root", "");
+        Connection con= DriverManager.getConnection(url, "root", "");   // Server credentials
         return con;
     }
     
