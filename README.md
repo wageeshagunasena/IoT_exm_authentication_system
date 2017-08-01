@@ -8,8 +8,10 @@ This is an Arduino based device to authenticate and mark attendance of students 
 4. NX4024T032_11 Nextion TFT touch display
 5. ESP-01 Wifi module
 
-# Description
-The code for the Arduino is in the file sys.ino. The connections are described in the sys.ino file itself.
+# Device
+The code for the Arduino is in the file sys.ino. The connections are described in the sys.ino file itself. The device is programmed to connect a remote server to retrieve the student details to authenticate.
 
-The system is conneted to a remote server through the Wifi module. The data of the students is retrieved from that remote server.
+# Server
+The server runs on java. A MySQL database contains the details of the students. The details are read and send to the device as requested. 
+
 
