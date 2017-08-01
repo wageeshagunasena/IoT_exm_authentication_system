@@ -42,6 +42,16 @@ Used libraries:
 
 6. Install the device libraries mentioned in the Device section to your library folder in the Arduino working directory.
 
-7. Through the Arduino IDE complie and upload the device code to the board.
+7. Through the Arduino IDE open the sys.ino file and set the IP address of the server. Complie and upload to the board.
 
-8. 
+8. Open the Server project folder through Netbeans IDE.
+
+9. Download the libraries mentioned in the Server section from the links https://dev.mysql.com/downloads/connector/j/ , http://www.java2s.com/Code/Jar/j/Downloadjavaxmailjar.htm
+
+10. Import the libraries to the project
+
+11. Set the URL, username and the password of your SQLServer in the file jdbc.java
+
+12. Set the email address to which the report should be send.
+
+13. Run the project and reset the device.
