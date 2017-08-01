@@ -13,7 +13,8 @@ The code for the Arduino is in the file sys.ino. The connections are described i
 
 # Server
 The server runs on java. A MySQL database contains the details of the students. The details are read and send to the device as requested. When the authentication for a specific exam is finished a report containing the details of attendance is send to a defined e-mail address.
-The SQL file containing the database is in the file DB.sql.
+
+The SQL file containing the database is in the file DB.sql. The Netbeans project for the server is in the folder Server.
 
 Used libraries:
 
